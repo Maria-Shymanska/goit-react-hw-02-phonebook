@@ -15,20 +15,6 @@ class App extends React.Component {
     filter: '',
   };
 
-  //   componentDidMount() {
-  //   const contacts = localStorage.getItem('contacts');
-  //   const parsedContacts = JSON.parse(contacts);
-  //   if (parsedContacts) {
-  //     this.setState({ contacts: parsedContacts });
-  //   }
-  // }
-
-  // componentDidUpdate(prevState) {
-  //     if (this.state.contacts !== prevState.contacts) {
-  //     localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
-  //   }
-  // }
-
   //c компонента формі приходят данные при submit(ContactForm)
   // 2)метод добавление контакта который передается форме для того чтобы
   // получить значение написаного в форме =>
