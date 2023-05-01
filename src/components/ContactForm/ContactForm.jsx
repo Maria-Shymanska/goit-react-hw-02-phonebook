@@ -1,9 +1,9 @@
-import React from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Form, Label, Button } from './ContactForm.styled';
 
-class ContactForm extends React.Component {
-  // 1.these states are not needed in the APP until the time of SUBMIT the entire form/temporary data
+class ContactForm extends Component {
+  //1) эти state не нужны в APP до момента SUBMIT всей формы/ временные данные
   state = {
     name: '',
     number: '',

@@ -13,8 +13,7 @@ export const Label = styled.label`
   width: 300px;
   display: flex;
   justify-content: space-between;
-  /* font-size: 18px;
-font-weight: 500; */
+  filter: drop-shadow(0px 4px 4px #001111);
 `;
 export const Button = styled.button`
   margin-top: 10px;
@@ -24,7 +23,7 @@ export const Button = styled.button`
   font-size: 15px;
   border: 2px solid grey;
   border-radius: 10px;
-  background-color: lightgreen;
+  background-color: pink;
   :hover {
     font-weight: bold;
     background: lightgreen;
