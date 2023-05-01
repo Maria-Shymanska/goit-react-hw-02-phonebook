@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Maria-Shymanska/goit-react-hw-02-phonebook/static/js/main.31d6cfe0.js",
-    "index.html": "/Maria-Shymanska/goit-react-hw-02-phonebook/index.html"
+    "main.js": "/goit-react-hw-02-phonebook/static/js/main.31d6cfe0.js",
+    "index.html": "/goit-react-hw-02-phonebook/index.html"
   },
   "entrypoints": [
     "static/js/main.31d6cfe0.js"
