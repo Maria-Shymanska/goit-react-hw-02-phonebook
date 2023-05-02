@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Form, Label, Button } from './ContactForm.styled';
 
 class ContactForm extends Component {
-  //1) эти state не нужны в APP до момента SUBMIT всей формы/ временные данные
+  // 1) These states are not needed in the APP until the time of SUBMIT the entire form/temporary data
   state = {
     name: '',
     number: '',
@@ -21,7 +21,7 @@ class ContactForm extends Component {
   handleSubmit = event => {
     event.preventDefault();
 
-    // <ContactForm onSubmit={this.addContact} => получение данных в апп
+    // <ContactForm onSubmit={this.addContact} => Retrieving data in the APP;
     this.props.onSubmit(this.state);
     this.reset();
   };
