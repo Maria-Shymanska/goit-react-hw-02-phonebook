@@ -22,19 +22,33 @@ class App extends React.Component {
       id: nanoid(),
     };
 
-    this.setState(({ contacts }) => {
-      if (
-        contacts.find(
-          contact => contact.name.toLowerCase() === name.toLowerCase()
-        )
-      ) {
-        return alert(`${name} is already in contacts!`);
-      }
+    //   this.setState(({ contacts }) => {
+    //     if (
+    //       contacts.find(
+    //         contact => contact.name.toLowerCase() === name.toLowerCase()
+    //       )
+    //     ) {
+    //       return alert(`${name} is already in contacts!`);
+    //     }
 
-      return {
-        contacts: [contact, ...contacts],
-      };
-    });
+    //     return {
+    //       contacts: [contact, ...contacts],
+    //     };
+    //   });
+    // };
+
+    const existing = this.state.contacts.find(
+      ({ name }) => name === contact.name
+    );
+
+    if (existing) {
+      alert(`${contact.name} is already in contacts`);
+      return;
+    }
+
+    this.setState(prevState => ({
+      contacts: [contact, ...prevState.contacts],
+    }));
   };
 
   onChangeFilter = event => {
@@ -71,4 +85,5 @@ class App extends React.Component {
     );
   }
 }
+
 export default App;
